@@ -4,11 +4,15 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PowerHub</title>
+  <title>PowerHub: DOTS Calculator</title>
 </head>
 
 <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
   <h1 class="heading">PowerHub</h1>
+  <h2 class="subheading">Calculate your DOTS below!</h2>
+  </div>
 <div class="genderButtons" id="genderButtons">
   <input type="radio" name="gender" value="Male" id="male"> Male
   <div class="dividerTWO"></div>
@@ -27,7 +31,8 @@
     <button onclick="Dots()" class="calc" id="calc">Calculate Score</button>
   </div>
   <div>
-    <p class="score" id="scoree"></p>
+    <p class="error" id="error"></p>
+    <p class="score" id="score"></p>
   </div>
   <script src="index.js"></script>
 </body>
